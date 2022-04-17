@@ -14,6 +14,35 @@ const Home = () => {
                     <img src="https://browsecat.net/sites/default/files/chris-hemsworth-workout-wallpapers-66001-142067-8826053.png" alt="" />
                 </div>
             </div>
+            <div className="services__container">
+                <h1>OUR PRICING PLANS</h1>
+                <div className="services">
+                    <div className="card">
+                        <h1>Daily Package</h1>
+                        <span>$12</span>/daily
+                        <p>Free Consultation</p>
+                        <p>2 Hours Training</p>
+                        <p>Full Equipment</p>
+                        <button className="checkout__button">Check Out</button>
+                    </div>
+                    <div className="card">
+                        <h1>Weekly Package</h1>
+                        <span>$75</span>/weekly
+                        <p>Free Consultation</p>
+                        <p>2 Hours Training</p>
+                        <p>Full Equipment</p>
+                        <button className="checkout__button">Check Out</button>
+                    </div>
+                    <div className="card">
+                        <h1>Monthly Package</h1>
+                        <span>$340</span>/month
+                        <p>Free Consultation</p>
+                        <p>2 Hours Training</p>
+                        <p>Full Equipment</p>
+                        <button className="checkout__button">Check Out</button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

@@ -42,3 +42,49 @@
     font-weight: 600;
     font-size: 18px;
 }
+
+.services__container {
+    background-color: black;
+    padding: 2rem;
+    margin-block: 2rem;
+    color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.services__container h1 {
+    margin-block: 1rem;
+}
+
+.services {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    text-align: center;
+    background-color: #28282A;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.card span {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.checkout__button {
+    padding: 8px;
+    width: 100%;
+    background-color: #dff540;
+    border-radius: 100vw;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 2rem;
+    border: none;
+}
