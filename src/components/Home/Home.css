@@ -1,0 +1,44 @@
+.home__container {
+    background-color: rgb(255, 255, 255);
+}
+
+.banner {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.banner__title {
+
+    margin-top: 5rem;
+}
+
+.banner__title h1:first-child {
+    margin-bottom: -0.5rem;
+}
+
+.banner__title h1 {
+    font-size: 50px;
+    margin-bottom: 0.8rem;
+}
+
+.banner__title p {
+    width: 80%;
+}
+
+.banner__image img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.primary__button {
+    border: 0px;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-top: 1rem;
+    background-color: #dff540;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 18px;
+}
