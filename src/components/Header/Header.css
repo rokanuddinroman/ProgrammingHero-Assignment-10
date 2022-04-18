@@ -28,7 +28,7 @@
     color: #000;
 }
 
-.nav__buttons button {
+.blur__button {
     font-family: 'Poppins', sans-serif;
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0.6);
@@ -41,7 +41,7 @@
     margin-left: 0.5rem;
 }
 
-.nav__buttons button:hover {
+.blur__button:hover {
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
 }
@@ -49,6 +49,7 @@
 .menu-icon {
     display: none;
 }
+
 
 @media screen and (max-width:950px) {
     .menu-icon {
@@ -76,4 +77,16 @@
     .mobile__menu__items .nav__link {
         display: block;
     }
+
+    .mobile__menu__button {
+        display: block;
+        position: absolute;
+        top: 11.3rem;
+        width: 96%;
+        height: 40px;
+        padding: 5px;
+        padding-left: 1.5rem;
+        background-color: aliceblue;
+    }
+
 }

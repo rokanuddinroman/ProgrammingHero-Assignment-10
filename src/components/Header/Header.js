@@ -25,16 +25,16 @@ const Header = () => {
                     <CustomLink className='nav__link' to='/blogs'>Blogs</CustomLink>
                     <CustomLink className='nav__link' to='/about'>About Me</CustomLink>
                 </div>
-                <div className="nav__buttons">
+                <div className={menuBar ? "mobile__menu__button" : "nav__buttons"}>
                     {
                         user ?
                             <>
                                 <span>{user.email}</span>
-                                <button onClick={handleSignOut}>Signout</button>
+                                <button className='blur__button' onClick={handleSignOut}>Signout</button>
                             </>
                             :
-                            <><button onClick={() => navigate("/login")}>Login</button>
-                                <button onClick={() => navigate("/registration")}>Sign up</button></>
+                            <><button className='blur__button' onClick={() => navigate("/login")}>Login</button>
+                                <button className='blur__button' onClick={() => navigate("/registration")}>Sign up</button></>
                     }
                 </div>
                 <div className="menu-icon"><span onClick={() => setMenuBar(!menuBar)}><box-icon name='menu'></box-icon></span></div>
