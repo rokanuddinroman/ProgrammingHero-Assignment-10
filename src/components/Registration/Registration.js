@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Registration.css'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Registration = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -10,7 +12,7 @@ const Registration = () => {
     const [error, setError] = useState('')
     const navigate = useNavigate()
 
-    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
     const handleEmailBlur = event => {
         setEmail(event.target.value)
@@ -37,6 +39,7 @@ const Registration = () => {
             return;
         }
         createUserWithEmailAndPassword(email, password)
+        toast.success('Verification Mail Sent')
 
     }
 
@@ -44,6 +47,7 @@ const Registration = () => {
 
     return (
         <div className='container'>
+            <ToastContainer />
             <div className="form__container">
                 <div>
                     <form onSubmit={handleCreateUser} className="form__div">
