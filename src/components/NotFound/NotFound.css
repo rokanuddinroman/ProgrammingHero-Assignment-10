@@ -4,3 +4,12 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.errorpage img {
+    width: 50%;
+}
+
+.primary__button {
+    text-decoration: none;
+    margin-block: 2rem;
+}

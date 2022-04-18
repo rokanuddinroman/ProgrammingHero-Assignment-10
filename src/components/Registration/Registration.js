@@ -63,7 +63,8 @@ const Registration = () => {
                         <input className='login__button' type="submit" value="Sign Up" />
                         <p style={{ color: 'red' }}>{error}</p>
                         <hr />
-                        <button className="outline__button">Google Sign Up</button>
+                        <button className="outline__button"><span className='button__content'>
+                            <box-icon style={{ marginRight: '5px' }} type='logo' name='google'></box-icon> Google Sign Up</span></button>
                     </form>
                 </div>
             </div>

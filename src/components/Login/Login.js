@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css'
@@ -13,8 +13,15 @@ const Login = () => {
     const [
         signInWithEmailAndPassword,
         user,
-        error
+        loading,
+        error,
     ] = useSignInWithEmailAndPassword(auth);
+
+    const [signInWithGoogle, user1] = useSignInWithGoogle(auth);
+
+    const [sendPasswordResetEmail, sending, error2] = useSendPasswordResetEmail(
+        auth
+    );
 
     const handleEmailBlur = event => {
         setEmail(event.target.value);
@@ -26,16 +33,28 @@ const Login = () => {
     if (user) {
         navigate(from, { replace: true })
     }
-
+    if (user1) {
+        navigate(from, { replace: true })
+    }
     const handleUserSignIn = event => {
         event.preventDefault();
         signInWithEmailAndPassword(email, password)
     }
+
+    const resetPassword = async () => {
+        if (email) {
+            await sendPasswordResetEmail(email);
+            alert('Sent email');
+        }
+        else {
+            alert('enter email')
+        }
+    }
     return (
         <div className="container">
             <div className="form__container">
-                <div>
-                    <form onSubmit={handleUserSignIn} className="form__div">
+                <div className="form__div">
+                    <form onSubmit={handleUserSignIn}>
                         <div className="input__group">
                             <label htmlFor="email">Email*</label>
                             <input onBlur={handleEmailBlur} type="email" name="" id="email" required />
@@ -46,10 +65,13 @@ const Login = () => {
                         </div>
                         <p>Don't have an account? <Link to="/registration">Sign Up</Link></p>
                         <input className='login__button' type="submit" value="Login" />
-                        <p style={{ color: 'red' }}>{error.message}</p>
-                        <hr />
-                        <button className="outline__button">Google Sign In</button>
+                        <p style={{ color: 'red' }}>{error?.message}</p>
+                        <p>{error2?.message}</p>
                     </form>
+                    <p>Forget Password? <button onClick={resetPassword} className='link__button'>Reset Password</button></p>
+                    <hr />
+                    <button onClick={() => signInWithGoogle()} className="outline__button"><span className='button__content'>
+                        <box-icon style={{ marginRight: '5px' }} type='logo' name='google'></box-icon> Google Sign In</span></button>
                 </div>
             </div>
         </div>

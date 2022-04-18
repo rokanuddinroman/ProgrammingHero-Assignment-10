@@ -4,10 +4,10 @@ import './NotFound.css'
 
 const NotFound = () => {
     return (
-        <div className='container'>
-            <h1>HEllo</h1>
+        <div>
             <div className="errorpage">
-                <Link>Return Home</Link>
+                <img src="https://static.vecteezy.com/system/resources/previews/002/416/606/non_2x/404-error-and-page-not-found-illustration-vector.jpg" alt="" />
+                <Link className='primary__button' to={'/'}>Return Home</Link>
             </div>
         </div>
     );
