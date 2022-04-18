@@ -1,6 +1,6 @@
-# [Max Fitness Live Site](link).
+# [Max Fitness Live Site](https://programminghero-assignment-10.web.app/).
 
-This [Live Site Link](link).
+This [Live Site Link](https://programminghero-assignment-10.web.app/).
 
 # Technology Used
 
