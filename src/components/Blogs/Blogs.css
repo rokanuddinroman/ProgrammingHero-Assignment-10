@@ -1,0 +1,9 @@
+.blogs div {
+    margin-block: 2rem;
+}
+
+.blogs__container h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2rem;
+}
