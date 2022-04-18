@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Registration.css'
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -11,8 +11,16 @@ const Registration = () => {
     const [confirmPassword, setConfirmPassword] = useState('')
     const [error, setError] = useState('')
     const navigate = useNavigate()
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || '/'
 
     const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
+    const [signInWithGoogle, user1] = useSignInWithGoogle(auth);
+    if (user1) {
+        navigate(from, { replace: true })
+    }
 
     const handleEmailBlur = event => {
         setEmail(event.target.value)
@@ -49,8 +57,8 @@ const Registration = () => {
         <div className='container'>
             <ToastContainer />
             <div className="form__container">
-                <div>
-                    <form onSubmit={handleCreateUser} className="form__div">
+                <div className="form__div">
+                    <form onSubmit={handleCreateUser}>
                         <div className="input__group">
                             <label htmlFor="email">Email*</label>
                             <input onBlur={handleEmailBlur} type="email" name="" id="email" required />
@@ -66,10 +74,10 @@ const Registration = () => {
                         <p>Already have an account? <Link to="/login">Login</Link></p>
                         <input className='login__button' type="submit" value="Sign Up" />
                         <p style={{ color: 'red' }}>{error}</p>
-                        <hr />
-                        <button className="outline__button"><span className='button__content'>
-                            <box-icon style={{ marginRight: '5px' }} type='logo' name='google'></box-icon> Google Sign Up</span></button>
                     </form>
+                    <hr />
+                    <button onClick={() => signInWithGoogle()} className="outline__button"><span className='button__content'>
+                        <box-icon style={{ marginRight: '5px' }} type='logo' name='google'></box-icon> Google Sign Up</span></button>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 import { signOut } from 'firebase/auth';
-import React from 'react';
+import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
@@ -11,11 +11,16 @@ const Header = () => {
     const handleSignOut = () => {
         signOut(auth);
     }
+
+    // menu 
+    const [menuBar, setMenuBar] = useState(false)
+
+
     return (
         <div className='container'>
             <nav className="nav__menu">
                 <Link className="nav__logo" to='/'>Max Fitness</Link>
-                <div className="nav__items">
+                <div className={menuBar ? "mobile__menu__items" : "nav__items"}>
                     <CustomLink className='nav__link' to='/'>Home</CustomLink>
                     <CustomLink className='nav__link' to='/blogs'>Blogs</CustomLink>
                     <CustomLink className='nav__link' to='/about'>About Me</CustomLink>
@@ -32,6 +37,7 @@ const Header = () => {
                                 <button onClick={() => navigate("/registration")}>Sign up</button></>
                     }
                 </div>
+                <div className="menu-icon"><span onClick={() => setMenuBar(!menuBar)}><box-icon name='menu'></box-icon></span></div>
             </nav>
         </div>
     );

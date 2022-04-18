@@ -7,6 +7,7 @@ const Service = (props) => {
     return (
         <div className='card'>
             <h1>{packageName}</h1>
+            <img src={image} alt="" />
             <span>${price}</span>/daily
             <p>{feature1}</p>
             <p>{feature2}</p>

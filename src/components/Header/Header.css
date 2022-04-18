@@ -45,3 +45,35 @@
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
 }
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width:950px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav__buttons {
+        display: none;
+    }
+
+    .nav__items {
+        display: none;
+    }
+
+    .mobile__menu__items {
+        width: 96%;
+        z-index: 10;
+        position: absolute;
+        background-color: aliceblue;
+        top: 4rem;
+        /* right: 1rem; */
+
+    }
+
+    .mobile__menu__items .nav__link {
+        display: block;
+    }
+}

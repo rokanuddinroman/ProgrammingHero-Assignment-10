@@ -28,30 +28,21 @@ const Home = () => {
                     {
                         services.map(service => <Service key={service.id} service={service}></Service>)
                     }
-                    {/* <div className="card">
-                        <h1>Daily Package</h1>
-                        <span>$12</span>/daily
-                        <p>Free Consultation</p>
-                        <p>2 Hours Training</p>
-                        <p>Tier 1 Equipment</p>
-                        <button onClick={() => navigate('checkout')} className="checkout__button">Check Out</button>
-                    </div>
-                    <div className="card featured">
-                        <h1>Weekly Package</h1>
-                        <span>$75</span>/weekly
-                        <p>Free Consultation</p>
-                        <p>7 Hours Training</p>
-                        <p>Tier 2 Equipment</p>
-                        <button onClick={() => navigate('checkout')} className="checkout__button">Check Out</button>
-                    </div>
-                    <div className="card">
-                        <h1>Monthly Package</h1>
-                        <span>$340</span>/month
-                        <p>Free Consultation</p>
-                        <p>24 Hours Training</p>
-                        <p>Full Equipment</p>
-                        <button onClick={() => navigate('checkout')} className="checkout__button">Check Out</button>
-                    </div> */}
+                </div>
+            </div>
+            <div className="contact__container">
+                <div className="picture">
+                    <img src="https://api.time.com/wp-content/uploads/2020/03/gym-coronavirus.jpg?w=824&quality=70" alt="" />
+                </div>
+                <div className="contact__form">
+                    <h1>Write your Message</h1>
+                    {/* <label htmlFor="Name">Name</label> */}
+                    <input type="text" name="Name" id="Name" placeholder='Name' />
+                    {/* <label htmlFor="email">Email</label> */}
+                    <input type="email" name="Email" id="email" placeholder='Email' />
+                    {/* <label htmlFor="Messages">Message</label> */}
+                    <input className='big__message' type="text" name="Your Messages" id="Messages" placeholder='Message' />
+                    <div className="button"><button style={{ margin: '0px' }} className='primary__button'>Send</button></div>
                 </div>
             </div>
         </div>

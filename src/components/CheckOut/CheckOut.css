@@ -1,0 +1,29 @@
+.checkout__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 1rem;
+}
+
+.checkout__container img {
+    width: 70%;
+}
+
+.checkout__container form {
+    margin-top: 2rem;
+}
+
+.checkout__container form input {
+    display: block;
+    width: 80%;
+    height: 50px;
+    padding-left: 5px;
+    border-radius: 8px;
+    border: 2px solid #869700;
+    margin: auto;
+    margin-block: 1rem;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 18px;
+}

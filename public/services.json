@@ -6,7 +6,7 @@
         "feature1": "Free Consultation",
         "feature2": "2 Hours Training",
         "feature3": "Tier 1 Equipment",
-        "image": "google.com"
+        "image": "https://www.bridgethicksfitness.com/wp-content/uploads/2016/09/cropped-dumbbell-512-1.png"
     },
     {
         "id": 175,
@@ -15,7 +15,7 @@
         "feature1": "Free Consultation",
         "feature2": "7 Hours Training",
         "feature3": "Tier 2 Equipment",
-        "image": "google.com"
+        "image": "https://icon-library.com/images/gym-icon-png/gym-icon-png-13.jpg"
     },
     {
         "id": 195,
@@ -24,6 +24,6 @@
         "feature1": "Free Consultation",
         "feature2": "24 Hours Training",
         "feature3": "Full Equipment",
-        "image": "google.com"
+        "image": "https://icon-library.com/images/gym-icon-png/gym-icon-png-13.jpg"
     }
 ]
