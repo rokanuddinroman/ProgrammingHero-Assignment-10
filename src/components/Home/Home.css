@@ -88,3 +88,7 @@
     margin-top: 2rem;
     border: none;
 }
+
+.featured {
+    background-color: #3c4400 !important;
+}

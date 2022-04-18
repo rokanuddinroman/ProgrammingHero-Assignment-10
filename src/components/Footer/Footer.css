@@ -1,0 +1,18 @@
+.footer__container {
+    border-radius: 20px 20px 0px 0px;
+    background-color: #dff540;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__container button {
+    padding: 8px 20px;
+    border: 0px;
+    border-radius: 12px;
+    color: black;
+    background-color: white;
+    font-weight: 600;
+    font-size: 20px;
+}

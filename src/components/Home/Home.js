@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Home.css'
 const Home = () => {
+    const navigate = useNavigate();
     return (
         <div className='container home__container'>
             <div className="banner">
@@ -22,24 +24,24 @@ const Home = () => {
                         <span>$12</span>/daily
                         <p>Free Consultation</p>
                         <p>2 Hours Training</p>
-                        <p>Full Equipment</p>
-                        <button className="checkout__button">Check Out</button>
+                        <p>Tier 1 Equipment</p>
+                        <button onClick={() => navigate('checkout')} className="checkout__button">Check Out</button>
                     </div>
-                    <div className="card">
+                    <div className="card featured">
                         <h1>Weekly Package</h1>
                         <span>$75</span>/weekly
                         <p>Free Consultation</p>
-                        <p>2 Hours Training</p>
-                        <p>Full Equipment</p>
-                        <button className="checkout__button">Check Out</button>
+                        <p>7 Hours Training</p>
+                        <p>Tier 2 Equipment</p>
+                        <button onClick={() => navigate('checkout')} className="checkout__button">Check Out</button>
                     </div>
                     <div className="card">
                         <h1>Monthly Package</h1>
                         <span>$340</span>/month
                         <p>Free Consultation</p>
-                        <p>2 Hours Training</p>
+                        <p>24 Hours Training</p>
                         <p>Full Equipment</p>
-                        <button className="checkout__button">Check Out</button>
+                        <button onClick={() => navigate('checkout')} className="checkout__button">Check Out</button>
                     </div>
                 </div>
             </div>

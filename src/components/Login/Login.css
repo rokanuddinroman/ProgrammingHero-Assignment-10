@@ -1,4 +1,5 @@
 .form__container {
+    margin-bottom: 2rem;
     margin-top: 5%;
     display: flex;
     justify-content: center;
@@ -51,6 +52,7 @@
     padding: 8px;
     width: 100%;
     margin-block: 1rem;
+    cursor: pointer;
 }
 
 hr {
