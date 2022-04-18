@@ -9,6 +9,7 @@ import Registration from './components/Registration/Registration';
 import Footer from './components/Footer/Footer';
 import CheckOut from './components/CheckOut/CheckOut';
 import RequireAuth from './components/RequireAuth/RequireAuth';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
           <RequireAuth>
             <CheckOut></CheckOut>
           </RequireAuth>
-        }></Route>
+        }>
+        </Route>
+        <Route path='/notfound' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

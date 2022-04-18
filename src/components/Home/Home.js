@@ -9,7 +9,7 @@ const Home = () => {
                 <div className="banner__title">
                     <h1>JUMP FORWARD FOR</h1>
                     <h1>BETTER TOMORROW</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate praesentium nihil quidem nam. Inventore magnam ipsam quasi ratione quam mollitia?</p>
+                    <p>Your job is to focus on taking action each day and communicate about any challenges. Our job is to meet you where you are, make any necessary adjustments, and continue customizing your perfect plan over time.</p>
                     <button className='primary__button'>Explore</button>
                 </div>
                 <div className="banner__image">
