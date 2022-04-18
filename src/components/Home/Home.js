@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css'
+import Service from './Service/Service';
 const Home = () => {
-    const navigate = useNavigate();
+    const [services, setServices] = useState([])
+    useEffect(() => {
+        fetch('services.json')
+            .then(res => res.json())
+            .then(data => setServices(data))
+    }, [])
     return (
         <div className='container home__container'>
             <div className="banner">
@@ -19,7 +25,10 @@ const Home = () => {
             <div className="services__container">
                 <h1>OUR PRICING PLANS</h1>
                 <div className="services">
-                    <div className="card">
+                    {
+                        services.map(service => <Service key={service.id} service={service}></Service>)
+                    }
+                    {/* <div className="card">
                         <h1>Daily Package</h1>
                         <span>$12</span>/daily
                         <p>Free Consultation</p>
@@ -42,7 +51,7 @@ const Home = () => {
                         <p>24 Hours Training</p>
                         <p>Full Equipment</p>
                         <button onClick={() => navigate('checkout')} className="checkout__button">Check Out</button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

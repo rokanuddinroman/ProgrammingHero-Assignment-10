@@ -92,3 +92,14 @@
 .featured {
     background-color: #3c4400 !important;
 }
+
+@media screen and (max-width:620px) {
+    .banner {
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+}

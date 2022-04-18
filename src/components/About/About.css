@@ -1,0 +1,20 @@
+.about__container img {
+    width: 200px;
+    margin-right: 2rem;
+    border-radius: 50%;
+}
+
+.about__container h1 {
+    text-align: center;
+}
+
+.about__container {
+    margin-block: 2rem;
+}
+
+.about__container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}

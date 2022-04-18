@@ -1,0 +1,29 @@
+[
+    {
+        "id": 125,
+        "packageName": "Daily Package",
+        "price": 19,
+        "feature1": "Free Consultation",
+        "feature2": "2 Hours Training",
+        "feature3": "Tier 1 Equipment",
+        "image": "google.com"
+    },
+    {
+        "id": 175,
+        "packageName": "Weekly Package",
+        "price": 29,
+        "feature1": "Free Consultation",
+        "feature2": "7 Hours Training",
+        "feature3": "Tier 2 Equipment",
+        "image": "google.com"
+    },
+    {
+        "id": 195,
+        "packageName": "Monthly Package",
+        "price": 49,
+        "feature1": "Free Consultation",
+        "feature2": "24 Hours Training",
+        "feature3": "Full Equipment",
+        "image": "google.com"
+    }
+]
