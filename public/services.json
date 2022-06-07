@@ -4,6 +4,7 @@
         "packageName": "Daily Package",
         "price": 19,
         "feature1": "Free Consultation",
+        "description": "The best plan on the earth ever. Choose the plan right now.",
         "feature2": "2 Hours Training",
         "feature3": "Tier 1 Equipment",
         "image": "https://www.bridgethicksfitness.com/wp-content/uploads/2016/09/cropped-dumbbell-512-1.png"
@@ -11,8 +12,10 @@
     {
         "id": 175,
         "packageName": "Weekly Package",
+        "featured": "featured",
         "price": 29,
         "feature1": "Free Consultation",
+        "description": "The best plan on the earth ever. Choose the plan right now.",
         "feature2": "7 Hours Training",
         "feature3": "Tier 2 Equipment",
         "image": "https://icon-library.com/images/gym-icon-png/gym-icon-png-13.jpg"
@@ -22,6 +25,7 @@
         "packageName": "Monthly Package",
         "price": 49,
         "feature1": "Free Consultation",
+        "description": "The best plan on the earth ever. Choose the plan right now.",
         "feature2": "24 Hours Training",
         "feature3": "Full Equipment",
         "image": "https://icon-library.com/images/gym-icon-png/gym-icon-png-13.jpg"

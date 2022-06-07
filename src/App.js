@@ -14,8 +14,7 @@ import 'boxicons';
 
 function App() {
   return (
-    <div className="container">
-      <Header></Header>
+    <div className="">
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/blogs' element={<Blogs />}></Route>

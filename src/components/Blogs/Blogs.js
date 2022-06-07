@@ -1,9 +1,11 @@
 import React from 'react';
+import Header from '../Header/Header';
 import './Blogs.css'
 const Blogs = () => {
     return (
-        <div className='container'>
-            <div className="blogs__container">
+        <div className=''>
+            <Header color={"#000"}></Header>
+            <div className="blogs__container container">
                 <h2>Blogs</h2>
                 <div className="blogs">
                     <div>

@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 10px;
     gap: 1rem;
+    min-height: 100vh;
 }
 
 .checkout__container img {

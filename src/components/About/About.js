@@ -1,9 +1,11 @@
 import React from 'react';
+import Header from '../Header/Header';
 import './About.css'
 const About = () => {
     return (
-        <div className='container'>
-            <div className="about__container">
+        <div className=''>
+            <Header color={"#000"}></Header>
+            <div className="about__container container">
                 <h1>About Me</h1>
                 <div>
                     <img src="https://avatars.githubusercontent.com/u/88700880?v=4" alt="" />

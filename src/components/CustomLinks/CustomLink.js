@@ -9,7 +9,7 @@ function CustomLink({ children, to, ...props }) {
     return (
         <div style={{ display: 'inline' }}>
             <Link
-                style={{ backgroundColor: match ? "#DEF437" : "transparent", padding: match ? "4px 15px" : "4px 15px", color: match ? "#000" : "#000", borderRadius: match ? "100vw" : "0px" }}
+                style={{ backgroundColor: match ? "#DEF437" : "transparent", padding: match ? "4px 15px" : "4px 15px", color: match ? "#000 !important" : "#000", borderRadius: match ? "100vw" : "0px" }}
                 to={to}
                 {...props}
             >

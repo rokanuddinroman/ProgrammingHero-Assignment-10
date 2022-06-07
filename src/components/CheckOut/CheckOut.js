@@ -1,9 +1,11 @@
 import React from 'react';
+import Header from '../Header/Header';
 import './CheckOut.css'
 const CheckOut = () => {
     return (
-        <div className='container'>
-            <div className="checkout__container">
+        <div className=''>
+            <Header color={"#000"}></Header>
+            <div className="checkout__container container">
                 <img src="https://thumbs.dreamstime.com/b/process-successfully-completed-vector-icon-129672573.jpg" alt="" />
                 <form>
                     <input type="text" placeholder='Your Name' />
