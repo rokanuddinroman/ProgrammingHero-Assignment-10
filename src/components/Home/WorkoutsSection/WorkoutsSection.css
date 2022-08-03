@@ -97,3 +97,13 @@
     justify-content: center;
     margin-bottom: 1rem;
 }
+
+@media screen and (max-width:620px) {
+    .workouts {
+        grid-template-columns: 1fr;
+    }
+
+    .workout-para {
+        width: 100%;
+    }
+}

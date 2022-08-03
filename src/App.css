@@ -22,3 +22,9 @@ button {
   padding: 0;
   box-sizing: border-box;
 }
+
+@media screen and (max-width:620px) {
+  .container {
+    padding-inline: 16px;
+  }
+}

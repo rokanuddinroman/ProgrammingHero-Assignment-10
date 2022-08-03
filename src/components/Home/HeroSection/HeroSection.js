@@ -4,7 +4,6 @@ import Header from '../../Header/Header';
 const HeroSection = () => {
     return (
         <div className='home__container'>
-            <Header />
             <div className="banner container">
                 <div className="banner__title">
                     <h1>JUMP FORWARD FOR</h1>

@@ -38,9 +38,21 @@
     color: white;
     padding-bottom: 0.7rem;
     font-size: 15px;
-    /* text-align: center; */
+    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-inline: auto;
     padding-top: 0.5rem;
+}
+
+.copyright__warning p {
+    text-align: center;
+    margin-inline: auto;
+}
+
+@media screen and (max-width:620px) {
+    .footer__column {
+        grid-template-columns: 1fr;
+    }
 }

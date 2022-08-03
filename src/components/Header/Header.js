@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, Navbar, NavLink, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import CustomLink from '../CustomLinks/CustomLink';
 import './Header.css'
 const Header = ({ color }) => {
@@ -17,28 +18,31 @@ const Header = ({ color }) => {
 
 
     return (
-        <div style={{ backgroundColor: `${color}` }} className=''>
+        <div style={{ backgroundColor: `${color}`, position: "sticky", top: "0", width: "100%", zIndex: "999" }} className=''>
             <nav className="nav__menu container">
                 <Link className="nav__logo" to='/'>Max Fitness</Link>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                    <div className={menuBar ? "mobile__menu__items" : "nav__items"}>
+                <div className={menuBar && "nav"} style={{ display: "flex", alignItems: "center" }}>
+                    <div className={`${menuBar && "active__nav"} nav__items`}>
                         <NavLink className='nav__link' to='/'>Home</NavLink>
                         <NavLink className='nav__link' to='/blogs'>Blogs</NavLink>
-                        <NavLink className='nav__link' to='/about'>About Me</NavLink>
+                        <NavLink className='nav__link' to='/about'>About Developer</NavLink>
+                        <NavLink className='nav__link' to='/about-us'>About MaxFitness</NavLink>
                     </div>
-                    <div className={menuBar ? "mobile__menu__button" : "nav__buttons"}>
+                    <div className={`${menuBar && "active__nav"} nav__buttons`}>
                         {
                             user ?
                                 <>
-                                    <button className='blur__button' onClick={handleSignOut}>Signout</button>
+                                    <button className={`${menuBar && "active__nav"} blur__button`} onClick={handleSignOut}>Signout</button>
                                 </>
                                 :
-                                <><button className='blur__button' onClick={() => navigate("/login")}>Login</button>
-                                    <button style={{ marginLeft: "1rem" }} className='blur__button' onClick={() => navigate("/registration")}>Sign up</button></>
+                                <>
+                                    <button style={{ marginRight: "1rem" }} className={`${menuBar && "active__nav"} blur__button`} onClick={() => navigate("/login")}>Login</button>
+                                    <button className={`${menuBar && "active__nav"} blur__button`} onClick={() => navigate("/registration")}>Sign up</button>
+                                </>
                         }
                     </div>
                 </div>
-                <div className="menu-icon"><span onClick={() => setMenuBar(!menuBar)}><box-icon name='menu'></box-icon></span></div>
+                <div className='menu__icons'><span onClick={() => setMenuBar(!menuBar)}><HiOutlineMenuAlt4 className="menu__icon" /></span></div>
             </nav>
         </div>
     );

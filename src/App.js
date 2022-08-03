@@ -11,6 +11,7 @@ import CheckOut from './components/CheckOut/CheckOut';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import NotFound from './components/NotFound/NotFound';
 import 'boxicons';
+import AboutUs from './components/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/blogs' element={<Blogs />}></Route>
         <Route path='/about' element={<About />}></Route>
+        <Route path='/about-us' element={<AboutUs />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/registration' element={<Registration />}></Route>
         <Route path='/checkout' element={
