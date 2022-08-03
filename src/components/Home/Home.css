@@ -16,10 +16,11 @@
 }
 
 .banner__title {
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .banner__title h1:first-child {
+    margin-top: 3rem;
     margin-bottom: -0.5rem;
 }
 
