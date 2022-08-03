@@ -13,7 +13,7 @@ const ServicesSection = () => {
             <div className="container">
                 <h1>Service Planlist</h1>
                 <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aspernatur nisi ut dignissimos, mollitia autem repudiandae numquam fugiat dolor minima.</p>
+                    <p>Max Fitness provides 3 package for everyone. You can purchase daily, weekly, or Monthly subscription. Weekly plan is one of the best selling package of alltime.</p>
                 </div>
                 <div className="services">
                     {

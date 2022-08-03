@@ -12,7 +12,7 @@ const ReviewsSection = () => {
             <div className="reviews__container container">
                 <h1 className='workout-heading'>Reviews</h1>
                 <div>
-                    <p className='workout-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aspernatur nisi ut dignissimos, mollitia autem repudiandae numquam fugiat dolor minima.</p>
+                    <p className='workout-para'>Read the following latest reviews by our clients. Hope it will give a transparent experience for everyone. You can write reviews through email and our website.</p>
                 </div>
                 <div className="reviews">
                     {

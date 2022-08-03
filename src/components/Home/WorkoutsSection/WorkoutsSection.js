@@ -6,7 +6,7 @@ const WorkoutsSection = () => {
         <div className='container'>
             <h1 className='workout-heading'>Workouts</h1>
             <div>
-                <p className='workout-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aspernatur nisi ut dignissimos, mollitia autem repudiandae numquam fugiat dolor minima.</p>
+                <p className='workout-para'>Max Fitness provide free training for every beginners. We have classes for legs, chest, arm workout, and so on. Watch the classes right now.</p>
             </div>
             <div className='workouts'>
                 <div className='workout'>
@@ -14,7 +14,7 @@ const WorkoutsSection = () => {
                         <IoMdFitness />
                     </div>
                     <h2>Chest Workout</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod aperiam, quis quibusdam nostrum ea aliquid.</p>
+                    <p>Watch our free chest workout tutorial. It created by one of the best gym trainer in Bangladesh.</p>
                     <button className="secondary__button">Learn More</button>
                 </div>
                 <div className='workout'>
@@ -22,7 +22,7 @@ const WorkoutsSection = () => {
                         <IoMdFitness />
                     </div>
                     <h2>Leg Workout</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod aperiam, quis quibusdam nostrum ea aliquid.</p>
+                    <p>Watch our free leg workout tutorial. It created by one of the best gym trainer in Bangladesh.</p>
                     <button className="secondary__button">Learn More</button>
                 </div>
                 <div className='workout'>
@@ -30,7 +30,7 @@ const WorkoutsSection = () => {
                         <IoMdFitness />
                     </div>
                     <h2>Arm Workout</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod aperiam, quis quibusdam nostrum ea aliquid.</p>
+                    <p>Watch our free arm workout tutorial. It created by one of the best gym trainer in Bangladesh.</p>
                     <button className="secondary__button">Learn More</button>
                 </div>
             </div>
